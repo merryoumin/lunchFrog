@@ -115,7 +115,7 @@ main .searchResult {
   background-color: rgba(100, 213, 223, 0.588);
   border-radius: 50px;
   width: 43%;
-  top: 109%;
+  top: 112%;
   left: 25%;
   padding: 5%;
   margin-top: 2%;
@@ -125,7 +125,7 @@ main .searchResult {
 }
 @media (max-width: 640px) {
   main .searchResult {
-    top: 137%;
+    top: 140%;
     left: 16%;
     width: 64%;
   }
@@ -141,7 +141,7 @@ main .bgVideoBox .bgVideo {
 }
 @media (max-width: 640px) {
   main .bgVideoBox .bgVideo {
-    top: 48%;
+    top: 49%;
     left: 7%;
     width: 88%;
     height: 31%;

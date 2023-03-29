@@ -109,7 +109,7 @@ main {
     background-color: rgba(100, 213, 223, 0.588);
     border-radius: 50px;
     width: 43%;
-    top: 109%;
+    top: 112%;
     left: 25%;
     padding: 5%;
     margin-top: 2%;
@@ -117,7 +117,7 @@ main {
     color: rgba(40, 40, 40, 0.475);
     text-align: center;
     @include responsive("phone") {
-      top: 137%;
+      top: 140%;
       left: 16%;
       width: 64%;
     }
@@ -132,7 +132,7 @@ main {
       height: 50%;
       object-fit: cover;
       @include responsive("phone") {
-        top: 48%;
+        top: 49%;
         left: 7%;
         width: 88%;
         height: 31%;
