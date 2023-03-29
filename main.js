@@ -72,8 +72,8 @@ function aboutHours() {
     time = "점심";
     menu.push(lunchMenu[menuRandom(lunchMenu)]);
   } else if (15 <= hours && hours < 18) {
-    time = "간식";
-    menu.push(snackMenu[menuRandom(snackMenu)]);
+    time = "늦은 점심 || 이른저녁";
+    menu.push(lunchMenu[menuRandom(lunchMenu)]);
   } else if (18 <= hours && hours < 21) {
     time = "저녁";
     menu.push(dinnerMenu[menuRandom(dinnerMenu)]);
@@ -450,8 +450,8 @@ const partyFoods = [
 
 ///////////////////////////////////////
 
-// const searchResult = document.querySelector(".searchResult");
-// let isLoading = false;
+const searchResult = document.querySelector(".searchResult");
+let isLoading = false;
 // async function onClickSearch(resultMenu) {
 //   console.log("in");
 //   if (isLoading) return;
@@ -472,14 +472,14 @@ const partyFoods = [
 //     }
 //   );
 
-  if (response.status === 200) {
-    searchResult.style.display = "inline";
-    looking.style.display = "none";
-    searchResult.innerText = response.data.choices[0].message.content;
-  }
+//   if (response.status === 200) {
+//     searchResult.style.display = "inline";
+//     looking.style.display = "none";
+//     searchResult.innerText = response.data.choices[0].message.content;
+//   }
 
-  isLoading = false;
-}
+//   isLoading = false;
+// }
 
 // 글자 입력 속도
 const speed = 100;
@@ -511,12 +511,13 @@ const remove = async () => {
     $meun.style.display = "inline";
     // howManyMenu(h, d, w);
     howManyMenu(1, 1, 3);
-    $meun.innerHTML = `<div class="tempTexts">${tempText}${weatherText}</div><h3>${day}${time}</h3><h4>추천 드리는 메뉴는 바로</h4><h1 class="resultMenu">"${
+    $meun.innerHTML = `<div class="tempTexts">${tempText}${weatherText}${day}</div><h3>${time}</h3><h4>추천 드리는 메뉴는 바로</h4><h1 class="resultMenu">"${
       menu[menuRandom(menu)]
     }"</h1>`;
     const $resultMenu = document.querySelector(".resultMenu").innerText;
     onClickSearch($resultMenu);
     looking.style.display = "inline";
+
     console.log($resultMenu);
     return;
   } else {
