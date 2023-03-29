@@ -1,0 +1,123 @@
+@keyframes spain {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  background-color: rgb(250, 251, 253);
+  overflow: scroll;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .explan {
+  margin-top: 7%;
+  background-color: rgba(239, 239, 239, 0.851);
+  width: 50%;
+  padding: 3%;
+}
+main .explan .explanContent {
+  font-size: 20px;
+  color: rgb(112, 112, 112);
+  font-weight: 600;
+}
+main .explan .explanBy {
+  text-align: right;
+  color: rgb(63, 63, 63);
+  margin-top: 3%;
+  font-size: 15px;
+}
+main .title {
+  font-size: 70px;
+  text-align: center;
+  font-weight: 900;
+  width: 50%;
+  color: rgba(239, 239, 239, 0.851);
+}
+main .smallTitleBack {
+  position: absolute;
+  background-color: rgba(167, 240, 247, 0.34);
+  border-radius: 50px;
+  width: 30%;
+  top: 50%;
+  left: 25%;
+}
+main .smallTitleBack .smallTitle {
+  padding: 10%;
+  margin-top: 2%;
+  font-size: 20px;
+  color: rgba(40, 40, 40, 0.475);
+  text-align: center;
+}
+main .meun {
+  display: none;
+  position: absolute;
+  background-color: rgba(145, 246, 255, 0.705);
+  border-radius: 50px;
+  width: 20%;
+  top: 65%;
+  left: 25%;
+  padding: 5%;
+  margin-top: 2%;
+  font-size: 20px;
+  color: rgba(40, 40, 40, 0.475);
+  text-align: center;
+}
+main .meun .tempTexts {
+  font-size: 30px;
+}
+main .meun h4 {
+  color: rgba(0, 0, 0, 0.256);
+}
+main .meun h1 {
+  color: rgba(0, 0, 0, 0.475);
+}
+main .searchResult {
+  display: none;
+  position: absolute;
+  background-color: rgba(100, 213, 223, 0.588);
+  border-radius: 50px;
+  width: 50%;
+  top: 109%;
+  left: 25%;
+  padding: 5%;
+  margin-top: 2%;
+  font-size: 20px;
+  color: rgba(40, 40, 40, 0.475);
+  text-align: center;
+}
+main .bgVideoBox .bgVideo {
+  position: absolute;
+  border-radius: 9999px;
+  top: 40%;
+  left: 60%;
+  width: 30%;
+  height: 50%;
+  object-fit: cover;
+}
+main .bgVideoBox .looking {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  color: rgba(40, 40, 40, 0.475);
+  top: 92%;
+  left: 71%;
+  font-weight: 900;
+}
+main .bgVideoBox .looking .searchLogo {
+  margin-left: 3px;
+  width: 23px;
+  height: 23px;
+  top: 92%;
+  animation: spain 2s linear infinite;
+}
+
+/*# sourceMappingURL=style.css.map */
